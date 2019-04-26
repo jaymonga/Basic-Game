@@ -145,13 +145,13 @@ window.onload = function () {
     else if (cursors.up.isDown) {
       player.animations.play('walk', 10, true);
       player.body.velocity.y = 300;
-      player.scale.x = 1;
+      player.scale.y = 1;
     }
        // is the down cursor key pressed?
     else if (cursors.down.isDown) {
       player.animations.play('walk', 10, true);
-      player.body.velocity.y = -300;
-      player.scale.x = 1;
+      player.body.velocity.y = - 300;
+      player.scale.y = - 1;
     }
     // player doesn't move
     else {
