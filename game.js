@@ -110,7 +110,7 @@ window.onload = function () {
     game.physics.arcade.enable(player);
     player.body.collideWorldBounds = true;
     player.body.gravity.y = 500;
-
+    
     addItems();
     addPlatforms();
 
@@ -140,18 +140,6 @@ window.onload = function () {
       player.animations.play('walk', 10, true);
       player.body.velocity.x = 300;
       player.scale.x = 1;
-    }
-        // is the up cursor key pressed?
-    else if (cursors.up.isDown) {
-      player.animations.play('walk', 10, true);
-      player.body.velocity.y = 300;
-      player.scale.y = 1;
-    }
-       // is the down cursor key pressed?
-    else if (cursors.down.isDown) {
-      player.animations.play('walk', 10, true);
-      player.body.velocity.y = - 300;
-      player.scale.y = - 1;
     }
     // player doesn't move
     else {
